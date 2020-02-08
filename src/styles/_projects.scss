@@ -1,0 +1,31 @@
+
+.projects_card {
+  background: none;
+  border: none;
+  cursor: pointer;
+  
+  .projects_card--image {
+    max-width: 190px;
+    &:hover {
+      @include easeIn(.2s, 1.1)
+    }
+  }
+}
+.projects_card--message{
+  margin-bottom: 30px;
+  color: $link-colors;
+  @media screen and (max-width: $break-small) {
+    margin-bottom: 15px;
+    h4{
+      font-size: 1rem;
+    }
+  }
+}
+
+.projects_heading {
+  font-size: 5rem;
+   @media screen and (max-width: $break-small) {
+    font-size: 3rem;
+    margin-bottom: 40px;
+   }
+}

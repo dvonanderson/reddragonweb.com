@@ -1,0 +1,17 @@
+.contact_form--image {
+  max-width: 600px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(172, 170, 170, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(172, 170, 170, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(172, 170, 170, 0.75);
+  @media screen and (max-width: $break-small) {
+    max-width: 100%;
+  }
+}
+.contact_form--body {
+  max-width: 600px;
+  margin: auto;
+  label{
+    font-size: 1.3rem;
+  }
+}

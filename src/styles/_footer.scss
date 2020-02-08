@@ -1,0 +1,47 @@
+.site-footer {
+  display: flex;
+  flex-direction: row;
+  background: $zinc-background;
+  padding: 5px;
+  color: $light-gray;
+  .site-footer__social-container{
+    flex-grow: 1;
+    a {
+      margin-right: 10px;
+      display: inline-block;
+      color: $social-media-color;
+
+      &:hover {
+
+        &.twitter{
+          @include colorEase(rgb(0, 132, 180), .3s, ease-in)
+        }
+        &.airplane {
+          @include colorEase(#FF5A5F, .3s, ease-in)
+        }
+        &.linkedin {
+          @include colorEase(#0e76a8, .3s, ease-in)
+        }
+        &.github {
+          @include colorEase(#6cc644, .3s, ease-in)
+        }
+      }
+    }
+  }
+
+
+  .site-footer__cr-container {
+    flex-grow: 1;
+    align-self: center;
+    p {
+      color: $dark-gray;
+      margin: 0;
+      .site-footer__cr-container__span {
+        font-family: 'Star Jedi', FallBack, sans-serif;
+        .site-footer__cr-container__span-word {
+          @include redDragonTextColor($red-dragon-word, 2px);
+        }
+      }
+    }
+  }
+}

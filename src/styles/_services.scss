@@ -1,0 +1,82 @@
+.services_container {
+  margin-top: 15px;
+
+  .services_card {
+    background: transparent;
+    border: none;
+  }
+
+  .services_card_span {
+    font-family: 'Star Jedi', Fallback, sans-serif;
+    .services_card_span_color-change {
+      @include redDragonTextColor($red-dragon-word, 3px)
+    }
+  }
+
+  .services_card--image {
+    max-width: 220px;
+    margin: auto;
+  }
+
+  .services_title {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: $link-colors;
+    font-weight: bold;
+    @media screen and (max-width: $break-small) {
+      font-size: 3rem;
+    }
+  }
+
+  .services_card--title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    @media screen and (max-width: $break-small) {
+      font-size: 2rem;
+    }
+  }
+}
+
+
+.process_container {
+  margin-top: 15px;
+  margin-bottom: 30px;
+
+  .process_card {
+    background: transparent;
+    border: none;
+  }
+
+
+  .process_title {
+    font-size: 5rem;
+    text-transform: uppercase;
+     color: $link-colors;
+     font-weight: bold;
+     @media screen and (max-width: $break-small) {
+       font-size: 3rem;
+     }
+  }
+
+  .process_card--image {
+    max-width: 220px;
+    margin: auto;
+  }
+
+  .process_card--title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    @media screen and (max-width: $break-small) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.reference_tooltip{
+  margin: auto;
+  a {
+    font-size: 1rem;
+  }
+}

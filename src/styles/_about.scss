@@ -1,0 +1,52 @@
+.about-container {
+  margin-top: 100px;
+  @media screen and (max-width: $break-small) {
+    text-align: center;
+  }
+
+  .about-container__description {
+    color: $link-colors;
+    .about-container__description__header {
+      font-size: 2.5rem;
+      font-weight: bold;
+      .about-container__description__header-span {
+        font-family: 'Star Jedi', FallBack, sans-serif;
+        .about-container__description__header-span__first {
+          @include redDragonTextColor($red-dragon-word, 5px);
+        }
+      }
+
+        @media screen and (max-width: $break-small) {
+          font-size: 1.4rem;
+          margin: 20px 0 20px 0;
+        }
+    }
+    .about-container__description__para {
+      font-size: 1.4rem;
+      line-height: 1.3;
+      @media screen and (max-width: $break-small) {
+        font-size: 1rem;
+      }
+    }
+    .about-container__description__mail {
+      cursor: pointer;
+      &:hover {
+        @include colorEase(#007bff, 2s, ease-out);
+      }
+      @media screen and (max-width: $break-small) {
+        display: none;
+      }
+    }
+    .about-container__description__small {
+      @media screen and (min-width: 600px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.about-container__headshot {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}

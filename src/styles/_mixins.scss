@@ -1,0 +1,18 @@
+@mixin easeIn($time, $scale) {
+  transition: all $time ease-in;
+  transform: scale($scale);
+}
+
+@mixin colorEase($color, $time, $transition) {
+  color: $color;
+  -webkit-transition: color $time $transition;
+  -moz-transition: color $time $transition;
+  -o-transition: color $time $transition;
+  transition: color $time $transition;
+}
+
+
+@mixin redDragonTextColor($color, $margin) {
+  color: $color;
+  margin-right: $margin;
+}

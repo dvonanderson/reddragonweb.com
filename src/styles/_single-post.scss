@@ -1,0 +1,67 @@
+
+.single_post--para {
+  font-size: 1.4rem;  
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: $break-small) {
+    font-size: 1.1rem;
+  }
+  
+}
+
+.single_page--title {
+  color: $link-colors;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 4rem;
+  @media screen and (max-width: $break-small) {
+    font-size: 2rem;
+  }
+}
+
+.single_post--image-container{
+  max-width: 100%;
+  overflow: hidden;
+  @media screen and (max-width: $break-small) {
+    max-height: 100%;
+  }
+}
+.single_post--image {
+  margin-top: 30px;
+  max-width: 200px;
+}
+
+.single_post--info {
+  margin-top: 100px;
+  @media screen and (max-width: $break-small) {
+    margin-top: 30px;
+  }
+
+  .single_post--share, .single_post--date {
+    font-size: 1.4rem;
+    @media screen and (max-width: $break-small) {
+      font-size: 1.1rem;
+    }
+  }
+}
+.single_post--icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.single_post--twitter, .single_post--facebook {
+  color: $social-media-color;
+
+  &.single_post--twitter:hover {
+    color: rgb(56, 161, 243);
+    @include easeIn(.3s, 1.3);
+    cursor: pointer;
+  }
+  &.single_post--facebook:hover {
+    color: rgb(59, 89, 152);
+    @include easeIn(.3s, 1.3);
+    cursor: pointer;
+  }
+}
+
+

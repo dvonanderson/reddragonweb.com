@@ -1,0 +1,36 @@
+.navbar {
+  line-height: 1;
+  background: $zinc-background;
+  .navbar-toggler {
+    background-color: $light-gray
+  }
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+  color: $link-colors;
+  font-size: 1.4rem;
+  &:hover {
+    @include colorEase(#007bff, 2s, ease-out);
+  }
+}
+
+a {
+    color: $link-colors;
+    font-size: 1.2rem;
+    @media screen and (max-width: $break-small) {
+      font-size: 1.1rem;
+    }
+    &:hover {
+      @include colorEase($hover-color, 1s, ease-out);
+      @media screen and (max-width: $nav-break) {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .header_nav {
+    @media screen and (max-width: $nav-break) {
+      margin-top: 10px;
+    }
+  }

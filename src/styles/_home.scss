@@ -1,0 +1,31 @@
+.home-page {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0px;
+
+  .home-page__descript {
+    .home-page__descript__logo-title{
+      font-family: 'Star Jedi', Fallback, sans-serif;
+      font-size: 6rem;
+      margin-bottom: 5px;
+      @media screen and (max-width: $break-small){
+        font-size: 1.8rem;
+      }
+
+      span {
+        @include redDragonTextColor($red-dragon-word, 12px)
+      }
+    }
+    padding-top: 20px;
+
+  }
+  @media screen and (max-width: $break-small) {
+    margin-top: 100px;
+
+  }
+}
+
+.home-page__home-image {
+  max-width: 600px;
+  margin: 0 auto;
+}

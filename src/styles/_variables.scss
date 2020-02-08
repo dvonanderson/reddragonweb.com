@@ -1,0 +1,20 @@
+
+//background colors
+$moonlit-background: linear-gradient(to right, #0f0207, #203a43, #2c5364);
+$georgia-background: linear-gradient(to left, #002D56, #EED000);
+$zinc-background: linear-gradient(to right, #536976,#bbd2c5);
+// linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+$dragon-gradient: linear-gradient(to right, #C5474B, #D98871);
+
+//colors used throughout the website
+$light-gray: rgb(240, 240, 240);
+$hover-color: #B50027;
+$social-media-color: 'black';
+$dark-gray: rgb(80, 80, 80);
+$link-colors: lighten(#002D56, 5%);
+$white: #F5F5F5;
+$red-dragon-word: lighten($color: red, $amount: 13%);
+
+//breakpoint variables
+$break-small: 600px;
+$nav-break: 768px;
