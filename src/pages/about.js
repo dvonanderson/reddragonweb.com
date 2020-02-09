@@ -12,7 +12,7 @@ import {
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="About" keywords={['about', 'devon anderson', 'developer', 'Software Engineer', 'Athens Georgia', 'Web Developer']}/>
+    <SEO title="About" keywords={['about', 'devon anderson', 'web developer', 'software Engineer', 'jefferson, georgia', 'website development', 'mobile app development' ]}/>
     <Row className="about-container">
       <Col md="4">
         <HeadshotImage className="about-container__headshot"/>
